@@ -8,6 +8,9 @@
       $(".childTwo").hide();
       $(".childThree").hide();
 
+      if (output <= 10 ) {
+        $(".notADeveloper").show();
+      }
       if (output > 10 && < 28 ) {
         $(".cSharpTrack").show();
       }
