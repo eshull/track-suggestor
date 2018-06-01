@@ -1,23 +1,29 @@
 
   $(function(){
-    $("#epicodusTrack").submit(function(event) {
+    $("#output").submit(function(event) {
       event.preventDefault();
 
       //hides previous results on submit
-      $(".parentDiv").show();
-      $(".childOne").hide();
-      $(".childTwo").hide();
-      $(".childThree").hide();
+      // $(".results").show();
+      // $(".childOne").hide();
+      // $(".childTwo").hide();
+      // $(".childThree").hide();
 
       var work = parseInt($("#work").val());
       var interest = parseInt($("#interest").val());
       var development = parseInt($("#development").val());
       var computer = parseInt($("#computer").val());
       var projects = parseInt($("#projects").val());
+      var results = (work + interest + development + computer + projects + results)
+
+      return results;
 
 
 
-      if (output <= 10 ) {
+      if (results <= 10 ) {
+        debugger;
+        console.log(here);
+        $(".results").show();
         $(".notADeveloper").show();
       }
       if (output > 10 && < 28 ) {
