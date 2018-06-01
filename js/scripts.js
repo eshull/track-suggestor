@@ -2,11 +2,20 @@
   $(function(){
     $("#epicodusTrack").submit(function(event) {
       event.preventDefault();
-      var work = parseInt($("input:radio[name=interest]:checked").val());
+
+      //hides previous results on submit
       $(".parentDiv").show();
       $(".childOne").hide();
       $(".childTwo").hide();
       $(".childThree").hide();
+
+      var work = parseInt($("#work").val());
+      var interest = parseInt($("#interest").val());
+      var development = parseInt($("#development").val());
+      var computer = parseInt($("#computer").val());
+      var projects = parseInt($("#projects").val());
+
+
 
       if (output <= 10 ) {
         $(".notADeveloper").show();
