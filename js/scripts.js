@@ -2,11 +2,13 @@
   $(function(){
     $(alert("Hello"));
 
-    // hides previous results on submit
-    $(".results").hide();
-    $(".childOne").hide();
-    $(".childTwo").hide();
-    $(".childThree").hide();
+
+
+    //
+    // $(".noResult").hide();
+    // $(".cSharpResult").hide();
+    // $(".rubyResult").hide();
+    // $(".reactResult").hide();
 
     var work = parseInt($("#work").val());
     var interest = parseInt($("#interest").val());
@@ -14,23 +16,29 @@
     var computer = parseInt($("#computer").val());
     var projects = parseInt($("#projects").val());
 
-    var output = function() {
-      parseInt($(work + interest + development + computer + projects));
-      return output;
-    };
-    output();
+    // var output = function() {
+    //   parseInt($(work + interest + development + computer + projects));
+    //   return output;
+    // };
+    // output();
 
 
 
     $("#output").submit(function(event) {
       event.preventDefault();
 
-
+      // hides previous results on submit
+      // $(".noResult").hide();
+      // $(".cSharpResult").hide();
+      // $(".rubyResult").hide();
+      // $(".reactResult").hide();
 
 
       if (output === 0) {
         console.log(here);
+        $(".noResult").show();
         $(".notADeveloper").show();
+
       }
       // if (output >= 11 || <= 27) {
       //   $(".cSharpTrack").show();

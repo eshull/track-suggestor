@@ -1,3 +1,14 @@
+.noResult,
+.cSharpResult,
+.rubyResult,
+.reactResult {
+  display: none;
+}
+
+
+
+/*
+.results,
 .notADeveloper,
 .cSharpTrack,
 .rubyTrack,
