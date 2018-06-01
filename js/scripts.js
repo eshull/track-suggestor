@@ -33,7 +33,7 @@
       alert("submit works");
 
       // hides previous results on submit
-      // $(".noResult").hide();
+      // $(".notADeveloper").hide();
       // $(".cSharpResult").hide();
       // $(".rubyResult").hide();
       // $(".reactResult").hide();
@@ -46,10 +46,16 @@
         $(".notADeveloper").show();
       } if ((work + interest + development + computer + projects) <= 27) {
         console.log("sharp");
-      } if ((work + interest + development + computer + projects) <= 44) {
+        $(".cSharpResult").show();
+        $(".cSharpTrack").show();
+      } else if ((work + interest + development + computer + projects) <= 44) {
         console.log("Ruby");
-      } if ((work + interest + development + computer + projects) <= 60){
+        $(".rubyResult").show();
+        $(".rubyTrack").show();
+      } else if ((work + interest + development + computer + projects) <= 60){
         console.log("React");
+        $(".reactResult").show();
+        $(".reactTrack").show();
       } else {
           alert("in the else");
         };
