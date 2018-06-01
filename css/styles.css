@@ -5,7 +5,19 @@
   display: none;
 }
 
+.jumbotron {
+  text-align: center;
+}
 
+form {
+  width: 100%;
+}
+
+
+
+img {
+  width: 820px;
+}
 
 /*
 .results,

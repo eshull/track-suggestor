@@ -12,55 +12,59 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Epicodus Tracks <small>Which One is Right for Me?</h1>
+      <h1>Epicodus Tracks <small>Which One is Right for Me?</small></h1>
     </div>
-    <div class="container">
+    <div class="container row">
+      <div class="col-md-6">
+        <form id="theForm">
+          <h3>Where do you want to work?</h3>
+          <select class="form-control" id="work">
+            <option value="4">Startup</option>
+            <option value="8">Small Company</option>
+            <option value="12">Large Corporation</option>
+            <option value="0">None of These</option>
+          </select>
 
-    <form id="theForm">
-      <h3>Where do you want to work?</h3>
-      <select class="form-control" id="work">
-        <option value="4">Startup</option>
-        <option value="8">Small Company</option>
-        <option value="12">Large Corporation</option>
-        <option value="0">None of These</option>
-      </select>
-
-      <h3>What interests you most?</h3>
-      <select class="form-control" id="interest">
-        <option value="4">How things work</option>
-        <option value="12">How things look</option>
-        <option value="8">Both</option>
-        <option value="0">None of These</option>
-      </select>
-
-
-      <h3>What type of development interests you?</h3>
-      <select class="form-control" id="development">
-        <option value="4">Backend</option>
-        <option value="12">Front End</option>
-        <option value="8">Both</option>
-        <option value="0">None of These</option>
-      </select>
+          <h3>What interests you most?</h3>
+          <select class="form-control" id="interest">
+            <option value="4">How things work</option>
+            <option value="12">How things look</option>
+            <option value="8">Both</option>
+            <option value="0">None of These</option>
+          </select>
 
 
-      <h3>Are you a Windows or Mac person?</h3>
-      <select class="form-control" id="computer">
-        <option value="4">Windows</option>
-        <option value="8">Mac</option>
-        <option value="12">Either</option>
-        <option value="0">None of These</option>
-      </select>
+          <h3>What type of development interests you?</h3>
+          <select class="form-control" id="development">
+            <option value="4">Backend</option>
+            <option value="12">Front End</option>
+            <option value="8">Both</option>
+            <option value="0">None of These</option>
+          </select>
 
 
-      <h3>What type of development projects do you like?</h3>
-      <select class="form-control" id="projects">
-        <option value="4">Business Projects</option>
-        <option value="8">Mobile App</option>
-        <option value="12">Both Business & Mobile</option>
-        <option value="0">None of These</option>
-      </select>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+          <h3>Are you a Windows or Mac person?</h3>
+          <select class="form-control" id="computer">
+            <option value="4">Windows</option>
+            <option value="8">Mac</option>
+            <option value="12">Either</option>
+            <option value="0">None of These</option>
+          </select>
+
+
+          <h3>What type of development projects do you like?</h3>
+          <select class="form-control" id="projects">
+            <option value="4">Business Projects</option>
+            <option value="8">Mobile App</option>
+            <option value="12">Both Business & Mobile</option>
+            <option value="0">None of These</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="image col-md-6">
+        <img class="img-fluid" src="img/screen.jpg" alt="picture of screen">
+      </div>
 
     <div class="noResult">
       <div class=".notADeveloper">
