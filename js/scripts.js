@@ -18,13 +18,13 @@
     var projects = parseInt($("#projects").val());
 
 
-    var output = function() {
-
-      parseInt($(work + interest + development + computer + projects));
-      return output;
-
-    };
-    output(work, interest, development, computer, projects);
+    // var output = function() {
+    //
+    //   parseInt($(work + interest + development + computer + projects));
+    //   return output;
+    //
+    // };
+    // output(work, interest, development, computer, projects);
 
 
 
@@ -39,14 +39,18 @@
       // $(".reactResult").hide();
 
 
-      if (output < 100) {
-        debugger;
-        console.log("here");
+      if ((work + interest + development + computer + projects) <= 10) {
+
+        console.log("not a developer");
         $(".noResult").show();
         $(".notADeveloper").show();
-      }
-
-        else {
+      } if ((work + interest + development + computer + projects) <= 27) {
+        console.log("sharp");
+      } if ((work + interest + development + computer + projects) <= 44) {
+        console.log("Ruby");
+      } if ((work + interest + development + computer + projects) <= 60){
+        console.log("React");
+      } else {
           alert("in the else");
         };
 
