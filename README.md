@@ -10,6 +10,7 @@ This is a survey with five questions to determine which track is best for you at
 
 ## Setup/Installation Requirements
 
+* Check out code at repository: (https://github.com/eshull/track-suggestor)
 * Open site on Github pages: (https://eshull.github.io/track-suggestor/)
 * Answer all five questions in Survey
 * Click submit at the bottom
