@@ -2,28 +2,34 @@
   $(function(){
     $(alert("Hello"));
 
+    // hides previous results on submit
+    $(".results").hide();
+    $(".childOne").hide();
+    $(".childTwo").hide();
+    $(".childThree").hide();
+
     var work = parseInt($("#work").val());
     var interest = parseInt($("#interest").val());
     var development = parseInt($("#development").val());
     var computer = parseInt($("#computer").val());
     var projects = parseInt($("#projects").val());
-    var output = (work + interest + development + computer + projects)
+
+    var output = function() {
+      parseInt($(work + interest + development + computer + projects));
+      return output;
+    };
+    output();
+
+
 
     $("#output").submit(function(event) {
       event.preventDefault();
-      debugger;
-
-      // hides previous results on submit
-      $(".results").show();
-      $(".childOne").hide();
-      $(".childTwo").hide();
-      $(".childThree").hide();
 
 
-      if (output = 0) {
-        debugger;
+
+
+      if (output === 0) {
         console.log(here);
-        $(".results").show();
         $(".notADeveloper").show();
       }
       // if (output >= 11 || <= 27) {
