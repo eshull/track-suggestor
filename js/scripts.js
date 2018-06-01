@@ -1,40 +1,40 @@
 
   $(function(){
+    $(alert("Hello"));
+
+    var work = parseInt($("#work").val());
+    var interest = parseInt($("#interest").val());
+    var development = parseInt($("#development").val());
+    var computer = parseInt($("#computer").val());
+    var projects = parseInt($("#projects").val());
+    var output = (work + interest + development + computer + projects)
+
     $("#output").submit(function(event) {
       event.preventDefault();
+      debugger;
 
-      //hides previous results on submit
-      // $(".results").show();
-      // $(".childOne").hide();
-      // $(".childTwo").hide();
-      // $(".childThree").hide();
-
-      var work = parseInt($("#work").val());
-      var interest = parseInt($("#interest").val());
-      var development = parseInt($("#development").val());
-      var computer = parseInt($("#computer").val());
-      var projects = parseInt($("#projects").val());
-      var results = (work + interest + development + computer + projects + results)
-
-      return results;
+      // hides previous results on submit
+      $(".results").show();
+      $(".childOne").hide();
+      $(".childTwo").hide();
+      $(".childThree").hide();
 
 
-
-      if (results <= 10 ) {
+      if (output = 0) {
         debugger;
         console.log(here);
         $(".results").show();
         $(".notADeveloper").show();
       }
-      if (output > 10 && < 28 ) {
-        $(".cSharpTrack").show();
-      }
-      if (output >= 28 && <= 44) {
-        $(".rubyTrack").show();
-      }
-      if (output >= 45 && <=60) {
-        $(".reactTrack").show();
-      }
+      // if (output >= 11 || <= 27) {
+      //   $(".cSharpTrack").show();
+      // }
+      // if (output >= 28 || <= 44) {
+      //   $(".rubyTrack").show();
+      // }
+      // if (output >= 45 || <=60) {
+      //   $(".reactTrack").show();
+      // }
     });
   });
 
