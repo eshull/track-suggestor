@@ -19,3 +19,10 @@
       }
     });
   });
+
+// questions and answers for form
+// Where do you want to work? startup, small company, large corporation
+// What Interests you most? how things look, how things work, both
+// What type of development interests you? back end, front end, both
+// are you a windows or mac person? windows, mac, either
+// what types of development projects do you like? Business projects, mobile app, both business and mobile
