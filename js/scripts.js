@@ -8,13 +8,13 @@
       $(".childTwo").hide();
       $(".childThree").hide();
 
-      if (output < 4) {
-        $(".rubyTrack").show();
-      }
-      if (output >= 4) {
+      if (output > 10 && < 28 ) {
         $(".cSharpTrack").show();
       }
-      if (output >= 7) {
+      if (output >= 28 && <= 44) {
+        $(".rubyTrack").show();
+      }
+      if (output >= 45 && <=60) {
         $(".reactTrack").show();
       }
     });
