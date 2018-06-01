@@ -1,10 +1,5 @@
 
-  $(function(){
-
-    // $(".noResult").hide();
-    // $(".cSharpResult").hide();
-    // $(".rubyResult").hide();
-    // $(".reactResult").hide();
+$(function(){
 
     var work = parseInt($("#work").val());
     var interest = parseInt($("#interest").val());
@@ -12,60 +7,29 @@
     var computer = parseInt($("#computer").val());
     var projects = parseInt($("#projects").val());
 
+  $("#theForm").submit(function(event) {
+    event.preventDefault();
 
-    // var output = function() {
-    //
-    //   parseInt($(work + interest + development + computer + projects));
-    //   return output;
-    //
-    // };
-    // output(work, interest, development, computer, projects);
-
-
-
-    $("#theForm").submit(function(event) {
-      event.preventDefault();
-
-
-      // hides previous results on submit
-      // $(".notADeveloper").hide();
-      // $(".cSharpResult").hide();
-      // $(".rubyResult").hide();
-      // $(".reactResult").hide();
-
-
-      if ((work + interest + development + computer + projects) <= 10) {
-        console.log("not a developer");
-        $(".noResult").show();
-        $(".notADeveloper").show();
-      } else if ((work + interest + development + computer + projects) <= 27) {
-        console.log("sharp");
-        $(".cSharpResult").show();
-        $(".cSharpTrack").show();
-      } else if ((work + interest + development + computer + projects) <= 44) {
-        console.log("Ruby");
-        $(".rubyResult").show();
-        $(".rubyTrack").show();
-      } else if ((work + interest + development + computer + projects) <= 60) {
-        console.log("React");
-        $(".reactResult").show();
-        $(".reactTrack").show();
-      } else {
-          alert("in the else");
-        };
-
-      // }
-      // if (outputd >= 11 || <= 27) {
-      //   $(".cSharpTrack").show();
-      // }
-      // if (output >= 28 || <= 44) {
-      //   $(".rubyTrack").show();
-      // }
-      // if (output >= 45 || <=60) {
-      //   $(".reactTrack").show();
-      // }
-
-  });
+    if ((work + interest + development + computer + projects) <= 10) {
+      console.log("not a developer");
+      $(".noResult").show();
+      $(".notADeveloper").show();
+    } else if ((work + interest + development + computer + projects) <= 27) {
+      console.log("sharp");
+      $(".cSharpResult").show();
+      $(".cSharpTrack").show();
+    } else if ((work + interest + development + computer + projects) <= 44) {
+      console.log("Ruby");
+      $(".rubyResult").show();
+      $(".rubyTrack").show();
+    } else if ((work + interest + development + computer + projects) <= 60) {
+      console.log("React");
+      $(".reactResult").show();
+      $(".reactTrack").show();
+    } else {
+        alert("in the else");
+      };
+    });
   });
 
 // questions and answers for form
