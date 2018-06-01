@@ -17,16 +17,20 @@
     var computer = parseInt($("#computer").val());
     var projects = parseInt($("#projects").val());
 
+
     var output = function() {
+
       parseInt($(work + interest + development + computer + projects));
       return output;
+
     };
-    output();
+    output(work, interest, development, computer, projects);
 
 
 
-    $("#output").submit(function(event) {
+    $("#theForm").submit(function(event) {
       event.preventDefault();
+      alert("submit works");
 
       // hides previous results on submit
       // $(".noResult").hide();
@@ -35,14 +39,16 @@
       // $(".reactResult").hide();
 
 
-      if (output < 10) {
+      if (output < 100) {
+        debugger;
         console.log("here");
         $(".noResult").show();
         $(".notADeveloper").show();
+      }
 
         else {
           alert("in the else");
-        }
+        };
 
       // }
       // if (outputd >= 11 || <= 27) {
@@ -54,7 +60,7 @@
       // if (output >= 45 || <=60) {
       //   $(".reactTrack").show();
       // }
-    };
+
   });
   });
 
