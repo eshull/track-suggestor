@@ -12,24 +12,21 @@
     // $(".reactResult").hide();
 
     var work = parseInt($("#work").val());
+    var interest = parseInt($("#interest").val());
+    var development = parseInt($("#development").val());
+    var computer = parseInt($("#computer").val());
+    var projects = parseInt($("#projects").val());
 
-    // var interest = parseInt($("#interest").val());
-    // var development = parseInt($("#development").val());
-    // var computer = parseInt($("#computer").val());
-    // var projects = parseInt($("#projects").val());
-    //
-    // var output = function() {
-    //   parseInt($(work + interest + development + computer + projects));
-    //   return output;
-    // };
-    // output();
+    var output = function() {
+      parseInt($(work + interest + development + computer + projects));
+      return output;
+    };
+    output();
 
 
 
     $("#output").submit(function(event) {
       event.preventDefault();
-
-      var work = parseInt($("#work").val());
 
       // hides previous results on submit
       // $(".noResult").hide();
@@ -38,10 +35,14 @@
       // $(".reactResult").hide();
 
 
-      if (work === 0) {
+      if (output < 10) {
         console.log("here");
         $(".noResult").show();
         $(".notADeveloper").show();
+
+        else {
+          alert("in the else");
+        }
 
       // }
       // if (outputd >= 11 || <= 27) {
