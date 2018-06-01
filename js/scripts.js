@@ -1,5 +1,6 @@
 
   $(function(){
+
     $(alert("Hello"));
 
 
@@ -11,6 +12,7 @@
     // $(".reactResult").hide();
 
     var work = parseInt($("#work").val());
+
     // var interest = parseInt($("#interest").val());
     // var development = parseInt($("#development").val());
     // var computer = parseInt($("#computer").val());
@@ -36,22 +38,23 @@
       // $(".reactResult").hide();
 
 
-      if (output === 0) {
-        console.log(here);
+      if (work === 0) {
+        console.log("here");
         $(".noResult").show();
         $(".notADeveloper").show();
 
-      }
-      if (outputd >= 11 || <= 27) {
-        $(".cSharpTrack").show();
-      }
-      if (output >= 28 || <= 44) {
-        $(".rubyTrack").show();
-      }
-      if (output >= 45 || <=60) {
-        $(".reactTrack").show();
-      }
-    });
+      // }
+      // if (outputd >= 11 || <= 27) {
+      //   $(".cSharpTrack").show();
+      // }
+      // if (output >= 28 || <= 44) {
+      //   $(".rubyTrack").show();
+      // }
+      // if (output >= 45 || <=60) {
+      //   $(".reactTrack").show();
+      // }
+    };
+  });
   });
 
 // questions and answers for form
