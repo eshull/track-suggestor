@@ -29,7 +29,13 @@ $(function(){
     } else {
         alert("in the else");
       };
+
+      $('#exampleModalCenter').modal('show');
+
     });
+
+
+
   });
 
 // questions and answers for form

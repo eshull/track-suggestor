@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"
 			  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
 			  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
@@ -59,7 +60,7 @@
             <option value="12">Both Business & Mobile</option>
             <option value="0">None of These</option>
           </select>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button data-toggle="modal" data-target="#exampleModalCenter" type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
       <div class="image col-md-6">
@@ -68,6 +69,28 @@
 
     <div class="noResult">
       <div class=".notADeveloper">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLongTitle">Is this the right career for you?</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h5>You don't seem that interested in development, maybe you should check out some other career options?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
         <h2>You don't seem that interested in development. Maybe try something different for a career?</h2>
       </div>
     </div>
@@ -85,6 +108,10 @@
       <div class=".reactTrack">
         <h2>Based on your answers, we think you should enroll in the React track at Epicodus.</h2>
       </div>
+    </div>
+
+
+
     </div>
 
     </div>
