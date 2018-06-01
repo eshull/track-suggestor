@@ -1,11 +1,6 @@
 
   $(function(){
 
-    $(alert("Hello"));
-
-
-
-    //
     // $(".noResult").hide();
     // $(".cSharpResult").hide();
     // $(".rubyResult").hide();
@@ -30,7 +25,7 @@
 
     $("#theForm").submit(function(event) {
       event.preventDefault();
-      alert("submit works");
+
 
       // hides previous results on submit
       // $(".notADeveloper").hide();
@@ -40,11 +35,10 @@
 
 
       if ((work + interest + development + computer + projects) <= 10) {
-
         console.log("not a developer");
         $(".noResult").show();
         $(".notADeveloper").show();
-      } if ((work + interest + development + computer + projects) <= 27) {
+      } else if ((work + interest + development + computer + projects) <= 27) {
         console.log("sharp");
         $(".cSharpResult").show();
         $(".cSharpTrack").show();
@@ -52,7 +46,7 @@
         console.log("Ruby");
         $(".rubyResult").show();
         $(".rubyTrack").show();
-      } else if ((work + interest + development + computer + projects) <= 60){
+      } else if ((work + interest + development + computer + projects) <= 60) {
         console.log("React");
         $(".reactResult").show();
         $(".reactTrack").show();
